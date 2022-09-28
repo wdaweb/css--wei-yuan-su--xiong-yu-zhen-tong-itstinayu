@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bear</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .bear {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .ears::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 26px;
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        border: 10px solid black;
+        border-radius: 50%;
+      }
+      .ears::after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 26px;
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        border: 10px solid black;
+        border-radius: 50%;
+      }
+      .eyes {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        box-shadow: 80px 63px 0 black, 186px 63px 0 black;
+        border-radius: 50%;
+      }
+      .eyes::before {
+        content: "";
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 52px;
+        left: 70px;
+        z-index: -1;
+      }
+      .eyes::after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        top: 52px;
+        left: 176px;
+        z-index: -1;
+      }
+      .mouth {
+        position: absolute;
+        top: 114px;
+        left: 90px;
+        width: 120px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+      }
+      .mouth::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 47px;
+        width: 30px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .mouth::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 20px;
+        width: 80px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .cheek::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 104px;
+        left: -20px;
+      }
+      .cheek::after {
+        content: "";
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 104px;
+        right: -20px;
+      }
+      .V::before {
+        content: "";
+        width: 30px;
+        height: 40px;
+        bottom: 32px;
+        left: 113px;
+        background-color: white;
+        position: absolute;
+        transform: skewX(40deg);
+      }
+      .V::after {
+        content: "";
+        width: 30px;
+        height: 40px;
+        bottom: 32px;
+        left: 161px;
+        background-color: white;
+        position: absolute;
+        transform: skewX(-40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bear">
+      <div class="ears"></div>
+      <div class="eyes"></div>
+      <div class="mouth"></div>
+      <div class="cheek"></div>
+      <div class="V"></div>
+    </div>
+  </body>
+</html>

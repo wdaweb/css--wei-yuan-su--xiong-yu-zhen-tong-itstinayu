@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>針筒01</title>
+    <meta name="author" content="Tina YU" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .syringe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 60px;
+        background: linear-gradient(white, #d3d3d3, white);
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+      }
+      .syringe::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -61px;
+        width: 60px;
+        height: 1px;
+        background-color: black;
+      }
+      .syringe::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 75px;
+        background: linear-gradient(white, #d3d3d3, white);
+        border: 1px solid #d3d3d3;
+        top: -10px;
+        left: -27px;
+        border-radius: 5px;
+      }
+      .others {
+        color: gray;
+        line-height: 140px;
+        position: absolute;
+        top: -12px;
+        left: 57px;
+        width: 400px;
+        height: 80px;
+        background: linear-gradient(white, #d3d3d3, white);
+        border: 1px solid #d3d3d3;
+      }
+      .others::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 200px;
+        height: 80px;
+        background-color: rgba(249, 249, 117, 0.3);
+        border: 1px solid #d3d3d3;
+        box-shadow: -40px 0 0 black;
+      }
+      .others::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 1px;
+        height: 13px;
+        background-color: #b4b2b2;
+        box-shadow: -20px 0 0 #b4b2b2, -40px 0 0 #b4b2b2, -60px 0 0 #b4b2b2,
+          -80px 0 0 #b4b2b2, -100px 0 0 #b4b2b2, -120px 0 0 #b4b2b2,
+          -140px 0 0 #b4b2b2, -160px 0 0 #b4b2b2, -180px 0 0 #b4b2b2,
+          -260px 0 0 #b4b2b2, -280px 0 0 #b4b2b2, -300px 0 0 #b4b2b2,
+          -320px 0 0 #b4b2b2, -340px 0 0 #b4b2b2, -360px 0 0 #b4b2b2,
+          -380px 0 0 #b4b2b2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="syringe">
+      <div class="others">Made in Taiwan</div>
+    </div>
+  </body>
+</html>
